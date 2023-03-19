@@ -1,0 +1,23 @@
+ERROR:root:Failed to open chrome
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1438, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "W:\Tax data collection bot\SAmplecode.py", line 277, in <module>
+    browser = webdr.Chrome()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 89, in __init__
+    self.service.start()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+
